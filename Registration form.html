@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        .allpage{
+            background-color:rgb(7, 240, 11);
+            font-family:  sans-serif;
+            padding: 10px,20px,10px,20px;
+            font-weight: 100px;
+            font-style: italic;
+            border-radius: 50px;
+            color:rgb(238, 7, 7);
+            border: 5px;
+            border-style: ridge;
+            border-color: rgb(72, 7, 238);
+        
+         } 
+
+        .btn{
+            font-size: 0.8rem;
+            border-radius: 100px;
+            color: red;
+            }
+        .page{
+            color:red;
+            font-size: large;
+           
+        } 
+        .maininfo{
+            color: blue;
+            font-size: large;
+        } 
+        .one{
+            background-color: antiquewhite;
+            background-image: url();
+            font-family: sans-serif;
+            
+        } 
+        .two{
+            text-align: left;
+        }
+        .last{
+            text-align: right;
+            
+            padding-left: 5px;
+            padding-top: 10px;
+            padding-block-start: 5px;
+            
+        }
+        .upload{
+            text-align: left;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Start the form  -->
+    <form class="one">
+        <center class="allpage"><h1>Registration</h1></center><br>
+         
+         <marquee directions="up" scrollamount="15"><h2>Fill the form of the Registration :-</h2></marquee>
+        <center class="page"><h3>Page-1</h3></center>
+       <center><fieldset>
+       
+            <!-- user infomation past satrt -->
+            <legend class="maininfo"><h3>User information</h3></legend>
+    <div class="two">
+        <label>Name:- </label>
+        <input type="text" name="Name" placeholder="Name"><br><br>
+        <label>Father Name:- </label>
+        <input type="text" name="Name" placeholder=" Father name "><br><br>
+        <label> Mother Name:- </label>
+        <input type="text" name="Name" placeholder=" Mother name "><br><br>
+        <label>E-mail:-</label>
+        <input type="email" name="Email" placeholder="Exam123@gmail.com"><br><br>
+        <label>Mobile number</label>
+        <input type="tel" name="mobile number" placeholder=" 9680621161"><br><br>
+        <label>Date of Birth:-</label>
+        <input type="date" name="date of birth"><br><br>
+        <label>Set Username:-</label>
+        <input type="text" name="Set Username" placeholder="Set Username"><br><br>
+        <label>Set Password:-</label>
+        <input type="password" name="Set Password" placeholder="Set Password"><br><br>
+        <label>Gender:-</label>
+        <input type="radio" name="gender" id="male" value="male" checked> 
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="Female" value="Female" checked> 
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Other" value="Other" checked> 
+        <label for="Other">Other</label><br><br>
+
+        <label>Course:-</label>
+        <input type="radio" name="course" id="Full satck" value="Full stack" checked> 
+        <label for="Full stack">Full Stack</label>
+        <input type="radio" name="course" id="Frontend developer" value="Frontend developer" checked> 
+        <label for="Frontend developer">Frontend developer</label>
+        <input type="radio" name="course" id="Backend developer" value="Backend developer" checked> 
+        <label for="Backend developer">backend developer</label><br><br>
+    
+
+        <label>Starting date:-</label>
+        <input type="date" name="starting date "><br><br>
+    </div>
+        <div class="btn">
+            <input type="button"onclick="alert('Thank  you ')" value="Next">
+            <input type="button" onclick="alert('wait !')"value="Edit">
+            <input type="button" onclick="alert('Waiting Sometime!')"value="Cancel">
+        </div><br>
+        </fieldset>
+        </center>
+        <!-- upload document past satrt -->
+        <div class="Upload-documents"></div>
+        <center class="page"><h3>Page-2</h3></center>
+         <fieldset>
+            <legend class="maininfo"><h3>Upload documents</h3></legend>
+            
+            <center>
+                <div class="upload">
+            <label>Images of candidate-</label>
+            <input type="file" value="Images"><br>
+            <label>Thumbs of rightfinger-</label>
+            <input type="file" value="Thumbs"><br>
+            <label>Candidate signature-</label>
+            <input type="file" value="signature"><br>
+            <label>10<sup>th</sup> marksheet-</label>
+            <input type="file" value="marksheet"><br>
+            <label>12<sup>th</sup> marksheet-</label>
+            <input type="file" value="marksheet"><br>
+            <label>cast certificate-</label>
+            <input type="file" value="cast certificate"><br>
+                </div>
+            </center><br>
+            <center>
+            <div class="btn"></div>
+            <input type="button" onclick="alert('Thank  you Upload documents')" value="Next">
+            <input type="button" value="Edit">
+            <input type="button" value="Cancel">
+            </center>
+            
+        </div><br>
+        <!-- declaration -->
+            </fieldset><br><br>
+
+             <center class="page"><h3>Page-3</h3></center>
+         <fieldset>
+            <legend class="maininfo"><h3>DECLARATION-</h3></legend>
+            <input type="checkbox">
+               <p>I do hereby declare that statements made in this resume are true & correct in the best of
+               my knowledge,if you found any type of discrepancy you will be able to cancel my
+               candidature at any stage.</p><br>
+            
+               <input type="button" onclick="alert('Thank you!')"value="Next">
+              
+         </fieldset>
+         <center><br><br>
+           
+         <input type="button" onclick="alert('Review your form!')" value="Review">
+         <input type="button" onclick="alert('Edit!')" value="Edit">
+         <input type="button" onclick="alert('Cancel!')" value="Cancel">
+         </center><br>
+<!-- submit btn -->
+        <div class="last">
+            <input type="button" onclick="alert('wait a momment!')" value="Print">
+          <input type="button" onclick="alert('Thank you!')" value="Submit">
+        </div>
+        
+    </form>
+    <fieldset></fieldset>
+    ><legend></legend>
+
+
+    
+</body>
+</html>
